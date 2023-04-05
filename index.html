@@ -1,0 +1,176 @@
+
+<html>
+<head>
+    <body>
+<p>
+    <li>#include<stdio.h></li>
+
+<li>int main()</li>
+<li>{   </li>
+    <li>int i,j,r,c;</li>
+    <li>printf("Enter rows and col : ");</li>
+        <li>scanf("%d %d", &r,&c);</li>
+        <li>int array[r][c];</li>
+        <li>for (i = 0; i < r; i++)</li></r>
+        <li>{</li>
+            <li>for (j = 0; j < c; j++)</li></c>
+            <li>{</li>
+                <li> printf("\nEnter a[%d][%d] : ",i,j);</li>
+                 <li>scanf("%d", &array[i][j]);</li>
+        <li>}</li>
+    <li>}</li>
+ <li>printf("\nThe Diagonals elements are : \n");</li>
+ if(r==c){
+     <li> for(i=0;i < r;i++) </li>
+            <li>{</li>
+         <li>       for(j=0;j< c;j++)</li>
+                <li>{</li>
+             <li>       if(i==j)</li>
+                 <li>    printf("%d ", array[i][j]);</li>   
+                <li>}</li>          
+        <li>}</li>
+    <li>}</li>
+    
+<li>return 0;</li>
+ }
+
+
+
+
+<li></li>
+<li></li>
+<li>Q 2 </li> 
+<li></li>#include<stdio.h> </li>
+
+    <li>int main()</li>
+{
+	<li>int i,j,r,c;</li>	
+	<li> printf(" the number of rows and col: ") ; </li>
+        <li>scanf("%d",&r,&c);</li>
+	i<li>nt arr[r][c];</li>
+	<li></li>int transpose[r][c];</li>
+    <li>for( i=0;i < r;i++ ) </li>
+	{
+		 <li> for( j=0;j < c;j++)</li>
+         <li>	 {</li>
+            <li>	printf(" Enter arr[%d][%d] value: " ,i,j);</li>
+             <li>	scanf(" %d " ,&arr[i][j]);</li>
+             <li>  }</li>
+    <li>}</li>
+	<li>printf(" The matrix is:\n" );</li>
+	<li> for (i = 0; i < r; i++)</li></r>
+	 {</li>
+        <li>for ( j = 0; j < c; j++)</li></c>
+         <li> {</li>
+            <li>  printf(" %d  " , arr[i][j]);</li>
+           <li>  if (j == c - 1)</li>
+          <li>  {</li>
+            <li> 	printf(" \n ");</li>
+              <li>}</li>
+          <li> }</li>
+         <li> }</li>
+     <li>printf(" The transpose is:\n " );</li>
+	<li>for (i = 0; i < r; i++)</li></r>
+    <li>	{</li>
+        <li>	for ( j = 0; j < c; j++)</li></c>
+        <li>	{</li></c>
+			<li>>transpose[j][i] = arr[i][j];</li></c>
+            <li>}</li></c>
+        <li>}
+</li>
+<li>for (i = 0; i < r; i++)</li></r>
+	<li> {</li></r>
+        <li>	for ( j = 0; j < c; j++)</li>
+         <li> {</li></c>
+            <li>  printf("%d  ", transpose[i][j]);</li></c>
+           <li>   if (j == r - 1)</li></c>
+           <li>  {</li></c>
+            <li>printf("\n");</li></c>
+              <li>	  }</li>
+     <li>}</li></c>
+         <li>	 }</li></c>
+     <li>return 0;</li></c>
+}</li></c>
+<li></li>
+<li></li>
+<li>Q3</li>
+<li>#include<stdio.h> </li>
+    <li> int main() </li>
+        <li>  { </li>
+            <li> int i,j,r,c,flag=0; </li>
+                <li>  printf("Enter the number of rows and col: "); </li>
+                    <li>  scanf("%d",&r,&c); </li>
+                        <li>   int arr[r][c]; </li>
+                            <li> for( i=0;i< r;i++) </li>
+                                <li>  { </li>
+                                    <li>   for( j=0;j< c;j++) </li>
+                                        <li>  {</li>
+                                            <li>     printf("Enter arr[%d][%d] value: ",i,j); </li>
+                                                <li>  scanf("%d",&arr[i][j]); </li>
+                 <li>  } </li>
+             <li>  } </li>
+        <li> for (i = 0; i < r; i++) </li>
+        <li> { </li>
+            <li> for (j = 0; j < c; j++) </li>
+            <li>    { </li>
+                <li>if (i == j && arr[i][j] != 1)</li>
+                <li> { </li>
+                    <li> flag = -1; </li>
+                    <li> break; </li>
+                    <li> } </li>
+                <li></li>else if (i != j && arr[i][j] != 0) </li>
+                <li>  { </li>
+                    <li>flag = -1;</li>
+                    <li> break;</li>
+                    <li>}</li>
+                <li>}</li>
+            <li>if (flag == 0)</li>
+        <li> {</li>
+            <li>printf ("It is an idenity matrix\n");</li>
+            <li>}</li>
+        <li>  else</li>
+        <li>  {</li>
+            <li>    printf ("It is NOT an identity matrix\n");</li>
+            <li> }</li>        
+        <li> return 0;</li>
+        <li>}</li>
+     <li>}</li>
+      <li></li>
+      <li></li>
+     <li> Q4 </li>
+     <li>   #include<stdio.h> </li>
+        <li> int main() </li>
+        <li> { </li>
+            <li>  int i,j,r,c; </li>
+            <li>  printf("Enter rows and col : "); </li>
+            <li>   scanf("%d %d", &r,&c); </li>
+                <li>    int array[r][c];  </li>
+                <li>  for (i = 0; i < r; i++) </li>
+                <li>  { </li>
+                    <li>  for (j = 0; j < c; j++) </li>
+                    <li>  { </li>
+                        <li>  printf("\nEnter a[%d][%d] : ",i,j); </li>
+                         <li>scanf("%d", &array[i][j]); </li>
+                         <li> } </li>
+                <li>  } </li>
+            <li>      printf("\nThe Diagonals elements are : \n"); </li>
+         <li>  if(r==c){ </li>
+            <li> for(i=0;i< r;i++) </li>
+              <li> { </li>
+                        <li>   for(j=0;j < c;j++) </li>
+                        <li>  { </li>
+                            <li>  if(i==j) </li>
+                            <li> printf("%d ", array[i][j]); </li>  
+                                <li> } </li> 
+                        <li> } </li>
+                    <li> }   </li>
+            <li> return 0; </li>
+         <li> } </li>
+        
+
+</p>
+
+    
+</body>
+</head>
+</html>
